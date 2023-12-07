@@ -27,4 +27,6 @@
 
     - további verziók esetén:
         >git  push
+        >
          >git commit -m "update read me"
+        
