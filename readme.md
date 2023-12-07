@@ -21,3 +21,10 @@
     - git hub repo létrehozása
     - össze kapcsolási parancs:
      >git remote add origin https://token@github.com/KVirag/zarodoga.git
+
+     - meg kell mondani a legelső alkalommal, hogy melyik ágat használjuk és feljesszük a legújjabb verziókat :
+        > git push -u origin master
+
+    - további verziók esetén:
+        >git  push
+         >git commit -m "update read me"
