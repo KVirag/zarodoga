@@ -29,4 +29,4 @@
         >git  push
         >
          >git commit -m "update read me"
-        
+        > vége
