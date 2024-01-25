@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Jan 22. 10:55
+-- Létrehozás ideje: 2024. Jan 25. 11:52
 -- Kiszolgáló verziója: 10.4.28-MariaDB
 -- PHP verzió: 8.2.4
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `sport`
 --
-CREATE DATABASE IF NOT EXISTS `sport` DEFAULT CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
-USE `sport`;
 
 -- --------------------------------------------------------
 
@@ -29,7 +27,6 @@ USE `sport`;
 -- Tábla szerkezet ehhez a táblához `categories`
 --
 
-DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL
@@ -49,7 +46,6 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 -- Tábla szerkezet ehhez a táblához `prodimages`
 --
 
-DROP TABLE IF EXISTS `prodimages`;
 CREATE TABLE `prodimages` (
   `id` int(11) NOT NULL,
   `prod_id` int(11) NOT NULL,
@@ -61,7 +57,11 @@ CREATE TABLE `prodimages` (
 --
 
 INSERT INTO `prodimages` (`id`, `prod_id`, `image`) VALUES
-(1, 1, 'https://ibb.co/NSkzwSd');
+(1, 1, 'https://ibb.co/NSkzwSd'),
+(2, 1, 'https://ibb.co/PTfgcc0'),
+(3, 1, 'https://ibb.co/cxckzvF'),
+(4, 1, 'https://ibb.co/9cty60p'),
+(5, 1, 'https://ibb.co/FDJRKjD');
 
 -- --------------------------------------------------------
 
@@ -69,7 +69,6 @@ INSERT INTO `prodimages` (`id`, `prod_id`, `image`) VALUES
 -- Tábla szerkezet ehhez a táblához `products`
 --
 
-DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
   `Id` int(11) NOT NULL,
   `ctg_id` int(11) NOT NULL,
@@ -128,7 +127,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT a táblához `prodimages`
 --
 ALTER TABLE `prodimages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT a táblához `products`
