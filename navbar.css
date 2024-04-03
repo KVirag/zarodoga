@@ -1,0 +1,311 @@
+body.dark,
+.dark .switcher-bar {
+	background: #1B1B1B;
+}
+
+.dark .switcher-bar,
+.dark .logo,
+.dark .header-btn a {
+	border-color: #000;
+}
+.logo.textual img {
+    height: 30px;
+    width: auto;
+    margin-top: 15px;
+}
+
+
+/* navbar*/
+  
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    padding: 15px 20px;
+  }
+  
+  .navbar-header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-toggle {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .navbar-title {
+    margin-left: 10px;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar-nav li {
+    padding: 10px 20px;
+  }
+  
+  .navbar-nav li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      width: 100%;
+      left: 0;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+    
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  /* navbar vége */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .menu-toggle {
+      display: block;
+    }
+  }
+
+  .logo {
+	border-right: 1px solid #444;
+}
+
+.logo a {
+	display: block;
+	/* max-height: 60px;*/
+}
+
+.logo a img {
+	display: block;
+	height: auto;
+	max-height: 60%;
+	max-width: 60%;
+	width: auto;
+    padding: 0 20px;
+	line-height: 50px;
+}
+@media screen and (max-width: 768px) {
+    /* Remove padding for the element on mobile devices */
+    .logo a img{
+      padding: 0;
+    }
+  }
+
+.logo.textual a {
+	color: #9B9B9B;
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 50px;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.sticky-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+
+
+  .header-btn {
+	position: relative;
+}
+
+.header-btn a {
+	border-right: 1px solid #444;
+	border-left: 1px solid #444;
+	display: block;
+	font-size: 24px;
+	height: 60px; 
+	padding: 0;
+	width: 60px; 
+	text-decoration: none;
+    
+}
+ul{
+    list-style-type: none; /* Remove default list styles */
+    
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    margin: 0px;
+    padding: 0px;
+}
+.header-btn a:before {
+	color: #9B9B9B;
+	left: 18px;
+	position: absolute;
+	top: 18px;
+}
+
+
+.header-btn a.icon-tablet {
+	font-size: 30px;
+}
+
+.header-btn a.icon-tablet:before {
+	left: 21px;
+	position: absolute;
+	top: 16px;
+}
+
+.header-btn a.icon-mobile-phone {
+	font-size: 30px;
+}
+
+.header-btn a.icon-mobile-phone:before {
+	left: 23px;
+	position: absolute;
+	top: 16px;
+}
+
+.header-btn a.icon-remove {
+	font-size: 24px;
+}
+
+.header-btn a.icon-remove:before {
+	left: 21px;
+	position: absolute;
+	top: 18px;
+}
+
+.header-btn a:hover,
+.header-btn.current a {
+	background: #222;
+	text-decoration: none;
+}
+
+.header-btn a:hover:before,
+.header-btn.current a:before {
+	color: #fff;
+}
+
+
+.purchase-btn{
+	background: #7AC64D;
+}
+
+.purchase-btn a{
+	border: none !important;
+}
+
+.purchase-btn a:before{
+	color: #fff !important;
+}
+
+
+.remove-btn a{
+	border: none !important;
+}
+
+.header-btn a:focus,
+.product-switcher a:focus {
+	outline: none;
+}
+
+
+
+
+
+/* a logo kép  */
+
+.product-switcher {
+	position: relative;
+	background: #222;
+}
+
+.product-switcher a:before {
+	content: '+';
+	left: 20px;
+	position: absolute;
+	top: 4px;
+}
+
+.product-switcher a {
+	color: #9B9B9B;
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 50px;
+	max-height: 60px;
+	padding: 5px 40px 5px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.product-switcher a span {
+	font-family: sans-serif;
+}
+
+.product-switcher a {
+	position: relative;
+}
+
+.product-switcher .badge {
+	background: #E66346;
+	border-radius: 0;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 9px;
+	font-weight: 300;
+	position: relative;
+	top: -3px;
+	right: -20px;
+	display: none;
+
+}
+
+.hide-icons {
+    display: none;
+  }
+
+
